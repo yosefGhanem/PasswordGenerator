@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: blanchedalmond;
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+h2{
+  /*10px top and bottom  */
+  margin: 10px 0px 20px;
+}
+.container{
+  background-color: rgb(255, 240, 144);
+  box-shadow: 0px 2px 10px rgba(88, 1, 1, 0.2);
+  padding: 20px;
+  width: 350px;
+  max-width: 100%;
+}
+
+.result-container {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  /* justify to the beginning */
+  justify-content: flex-start;
+  align-items: center;
+  /*Buttons inside gonna 
+  ba absolute*/
+  position: relative;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 12px 10px;
+  height: 50px;
+  width: 100%;
+}
+
+.result-container #result {
+  word-wrap: break-word;
+  /* 100% of rectangle but -40
+  cuz width of button is 40px below */
+  max-width: calc(100% -40px);
+}
+
+/* for the clipboard container*/
+.result-container .btn {
+  /* the container element
+  has to be relative */
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+}
+
+.btn {
+  border: none;
+  background-color: #3b3b98;
+  color: white;
+  font-size: 16px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+/* for generate password now */
+.btn-large {
+  display: block;
+  width: 100%;
+}
+
+
+.setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 15px 0;
+}
